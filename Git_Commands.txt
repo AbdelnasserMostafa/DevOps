@@ -1,0 +1,757 @@
+  brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
+  brew install http://git.io/sshpass.rb
+  git clone git://github.com/ansible/ansible.git --recursive
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  git clone https://github.com/efoda/hit_counter
+  git init
+  git config user.email "nasser02@yahoo.com"
+  git config user.name "AbdelnasserMostafa"
+  git remote add origin https://github.com/efoda/hit_counter.git
+  git remote add destination https://github.com/AbdelnasserMostafa/hit_counter.git
+  git add .
+  git commit -m "hit_counter commit"
+  git push -u destination master
+  git add Dockerfile
+  git commit -m "editing the Dockerfile"
+  git push -u destination master
+  git checkout rebaseExample
+  git rebase --interactive origin/stable-3.1
+  git rebase --interactive origin/stable-3.1
+  git rebase --interactive origin/stable-3.1
+  git rebase --abort
+  git rebase --interactive origin/stable-3.1
+  git rebase --onto origin/stable-3.1 origin/stable-3.2 rebaseExample
+  git checkout -b rebaseExample3 --track origin/stable-3.1
+  git log origin/stable-3.1..origin/stable-3.2 --online --reverse
+  git log origin/stable-3.1..origin/stable-3.2 --oneline --reverse
+  git rebase --interactive
+  git reset --hard 5218f7b
+  git rebase --interactive
+  git log -1
+  git reset --hard 5218f7b
+  git status
+  git rebase --interactive
+  git rebase --interactive
+  git diff 9c96a65
+  git checkout -b resetAuthorRebase -t origin/master
+  git commit --amend --reset-author
+  git log --format='format:%h %an <%ae>' origin/stable-3.2..HEAD
+  git rebase --interactive --exec "git commit --amend --reset-author" origin/stable-3.2
+  git rebase --interactive --exec "git commit --amend --reset-author --reuse-message=HEAD" origin/stable-3.2
+  git rebase --interactive --exec "git commit --amend --reset-author --reuse-message=HEAD" origin/stable-3.2
+  rm -fr ".git/rebase-merge"
+  git rebase --interactive --exec "git commit --amend --reset-author --reuse-message=HEAD" origin/stable-3.2
+  git log --format='format:%h %an <%ae>' origin/stable-3.2..HEAD
+  git checkout -b readme_update_developer --track origin/master
+  git merge
+  git status
+  git restore --staged .
+  git add .
+  git status
+  git checkout -b readme_update_developer --track origin/master
+  git commit -m "commiting changes before switching branches"
+  git status
+  git checkout -b readme_update_developer --track origin/master
+  git commit * -m "lots of commits"
+  git checkout -b readme_update_developer --track origin/master
+  git status
+  git commit -a -m "Updating information for developers"
+  git commit -a --squash=d53645 --no-edit
+  git commit -a --squash=d539645 --no-edit
+  git commit -a --squash=1c36f3c27 --no-edit
+  git commit -a --squash=1c36f3c27 --no-edit
+  git commit -a -m "Updating information on configuation"
+  git rebase -i
+  git rebase -i --autosquash
+  git config rebase.autosquash true
+  git log -3
+  git clone https://git.eclipse.org/r/jgit/jgit chapter5
+  git status
+  git status
+  git checkout -b notesMessage --track origin/stable-3.2
+  git log -1
+  git commit --amend
+  git log -1
+  git status
+  git reset --hard origin/stable-3.2
+  git notes add -m "Update MAINFEST files"
+  git log -1
+  git status
+  git st
+  git notes add -m "Update MANIFESTS files for next version"
+  git notes add  -f -m "Update MANIFESTS files for next version"
+  git log -1
+  git notes append -m "Verified by Ramus Voss"
+  git log -1 --notes --oneline
+  git notes edit -m "Rasmus Voss"
+  git checkout -b notesReferences --track origin/stable-3.1
+  git log -10 --oneline
+  git notes --ref alsoCherryPick add -m "570bba5e7" b4f07df35
+  git log -1 570bba5e7 --notes=alsoCherryPick
+  git config notes.displayRef "refs/notes/alsoCherryPick"
+  git log -1
+  git config notes.displayRef 'refs/notes/*'
+  git notes --ref defect add -m "Bug:24435" b4f07df357fccdff891df2a4fa5c5bd9e83b4a4a
+  git log -1 b4f07df357fccdff891df2a4fa5c5bd9e83b4a4a
+  git checkout -b myNotes notes/alsoCherryPick
+  git checkout master
+  git branch stable-3.0 origin-3.0
+  git branch-3.1 origin/stable-3.0
+  git branch-3.1 origin/stable-3.1
+  git branch stable-3.0 origin/stable-3.0
+  git branch stable-3.1 origin/stable-3.1
+  git branch stable-3.2 origin/stable-3.2
+  git branch
+  git clone ./chapter5 shareNotes
+  git branch -a
+  git log -1 b4f07df357fccdff891df2a4fa5c5bd9e83b4a4a --notes=alsoCherryPick
+  git config --get remote.origin.fetch
+  git config --add remote.origin.fetch "+refs/notes/*:refs/notes/*"
+  git config --get-all remote.origin.fetch
+  git fetch
+  git log -1 b4f07df357fccdff891df2a4fa5c5bd9e83b4a4a --notes=alsoCherryPick
+  git show
+  git notes --ref verified add -m "Verified by rasmus.voss@live.dk" 871ee53b52a
+  git log --notes=verified -1 871ee53b52a
+  git push
+  git push origin refs/notes/*
+  git push origin refs/notes/*
+  git log --notes=verified -1 871ee53b52a
+  git log -11 --no-merges --oneline origin/stable-2.3
+  git tab 'v2.3.0.201302061315rc1' ea060dd
+  git tag 'v2.3.0.201302061315rc1' ea060dd
+  git tag -l "v2.3.0.2*"
+  git show v2.3.0.201302061315rc1
+  git show ea060dd
+  git tag --annotate -m "Release Maturity rate 97% 'v2.3.0.201409022257rc2' 1c4ee41
+  git tag --annotate -m "Release Maturity rate 97%" 'v2.3.0.201409022257rc2' 1c4ee41
+  git show 'v2.3.0.201409022257rc2'
+  git tag -d v1.3.0.201202121842-rc4
+  git tag -a -m "Local created tag" v1.3.0.201202121842-rc4
+  git fetch
+  git show v1.3.0.201202121842-rc4
+  git tag -d v1.3.0.201202121842-rc4
+  git fetch
+  git show v1.3.0.201202121842-rc4
+  git shortlog
+  git shortlog | gre[ Nasser
+  git shortlog | grep Nasser
+  git shortlog | grep Abdelnasser
+  git clone https://git.eclipse.org/r/jgit/jgit chapter5
+  git clone https://git.eclipse.org/r/jgit/jgit chapter6
+  git shortlog -5
+  git shortlog -5 --numbered --summary
+  git shorting --numbered --summary --email --all
+  git shotlog --numbered --summary --email --all
+  git shortlog --numbered --summary --email --all
+  git shortlog --numbered --summary --email --all --since="6 months ago"
+  git shortlog --numbered --summary --email --all --since="6 days ago"
+  git shortlog --numbered --summary --email --all --since="1 days ago"
+  git shortlog --numbered --summary --email --all --since="1 october 2013"
+  git shortlog --numbered --summary --email --all --since="30 september" --until="1 november 2013"
+  git shortlog --numbered --summary --email --all --since="30 september 2013" --until="1 november 2013"
+  git shortlog --numbered --summary --email ./pom.xml
+  git shortlog --numbered --summary --email ./org.exlipse.jgit.console/
+  git shortlog --numbered --summary --email ./org.eclipse.jgit.console/
+  git shortlog  --numbered --summary --email ./org.eclipse.jgit.console/
+  git checkout stable-3.1
+  git log -1 --dirstat
+  git log -1 --dirstat=lines
+  git log -1 --dirstat=lines,10
+  git log -1 --dirstat=files,10,cumulative
+  git diff origin/stable-3.1..origin/stable=3.2 --dirstat
+  git diff origin/stable-3.1..origin/stable-3.2 --dirstat
+  git diff --pretty origin/stable-3.1..origin/stable-3.2 --numstat --relative
+  git log origin/stable-3.1..origin/stable-3.2 --format=format: --name-only
+  git log origin/stable-3.1..origin/stable-3.2 --format=format: --name-only | sed '/^$/d' | sort | uniq -c | sort -r 
+  git log origin/stable-3.1..origin/stable-3.2 --format=format: --name-only | sed '/^$/d' | sort | uniq -c | sort -r | head -10
+  git log origin/stable-3.1..origin/stable-3.2 org.eclipse.jgit/src/org/eclipse
+  git log --all --grep="[bB][uU][gG]: [0-9]"
+  git log --all --grep="^[bB][uU][gG]: [0-9]"
+  git log --all --grep="^[bB][uU][gG]: [0-9]: [0-9]\+" | wc -l
+  git log --all --oneline --grep="^[bB][uU][gG]: [0-9]: [0-9]\+" | wc -l
+  git log --all --oneline --grep="^[bB][uU][gG]: [0-9]\+" | wc -l
+  git log --all --oneline --extended-regexp --grep="^[bB][uU][gG]: [0-9]{6}"
+  git log --all --oneline --extended-regexp --grep="^[bB][uU][gG]: [0-9]{6}" | wc -l
+  git log --all --oneline --regexp-ignore-case --extended-regexp --grep="^bug: [0-9]{6}"
+  git log --oneline v2.3.1.201302201838-r..v3.0.0.201305080800-m7
+  git log --oneline v2.3.1.201302201838-r..v3.0.0.201305080800-m7 | wc -l
+  git log --oneline v2.3.1.201302201838-r..v3.0.0.201305080800-m7 --format=format: --name-only | sed '/^$/d' | sort | uniq -c | sort -r | head -10
+  git log --format=format:%h --regexp-ignore-case --extended-regexp --grep="bug: [0-9]{6} v2.3.1.201302201838-r..v3.0.0.201305080800-m7 | xargs -n1 git log -1 | grep --ignore-case -E "commit [0-9a-f]{40}|bug:"\n
+  git log --format=format:%h --regexp-ignore-case  --extended-regexp --grep="bug: [0-9]{6}"  v2.3.1.201302201838-r..v3.0.0.201305080800-m7 | xargs -n1 git log -1 | grep --ignore-case -E "commit [0-9a-f]{40}|bug:"
+  histor -1 | grep git
+  history 1 | grep git 
+  cat ~/.bash_history | grep git
+  fc -l -n 1 | sed 's/^\s*//' | grep git
+  git clone https://git.eclipse.org/r/jgit/jgit chapter7.5
+  git checkout -b descriptionInCommit --track origin/stable-3.2
+  git branch --edit-description descriptionInCommit
+  git config --get branch.descriptionInCommit.description
+  git commit --allow-empty
+  git log -1
+  git checkout -b noDescriptionBranch
+  git commit --allow-empty
+  git init chapter7
+  ls -la .git/hooks/
+  cd ./git/hooks/
+  cd .git/hooks/
+  git commit --allow-empty
+  git commit --allow-empty
+  git log -1
+  git --version
+  nano .git/hooks/prepare-commit-msg
+  git add fishtank.txt
+  git commit -m "All my fishes are belong to us"
+  git commit --amend
+  nano .git/hooks/prepare-commit-msg
+  git add fishtank.txt
+  git commit
+  git add fishtacnk.txt
+  git commit fishtacnk.txt
+  git add fishtacnk.txt
+  git commit fishtacnk.txt
+  git log -1
+  git status
+  git status --procelain
+  git status --procelain
+  git status --prrocelain
+  git status --procelain
+  git add fishtank.txt
+  git status
+  git status --porcelain
+  git status
+  nano .git/hooks/prepare-commit-msg
+  git commit
+  git log 1
+  git log -1
+  git reset --hard HEAD
+  git checkout -b commit-msg-example
+  mv .got/hooks/prepare-commit-msg .git/hooks/prepare-commit-msg.example
+  mv .git/hooks/prepare-commit-msg .git/hooks/prepare-commit-msg.example
+  cp .git/hooks/commit-msg.sample .git/hooks/commit-msg
+  nano .git/hooks/commit-msg
+  git add fishtank.txt
+  git commit
+  nano .git/hooks/commit-msg
+  git add fishtank.txt
+  git commit
+  git status
+  git commit
+  git clone https://git.eclips.org/r/jgit/jgit chapter7.1
+  git clone --branch master ./chapter7.1/ chapter7.2
+  git clone --branch master ./chapter7.1/ chapter7.2
+  git clone --branch master ./chapter7.1/ chapter7.2
+  git clone --branch master ./chapter7.1/ chapter7.2
+  git checkout -b prepushHook --track origin/master
+  git checkout -b gitAlias --track origin/stable-3.2
+  git checkout -b gitAlias --track origin/stable-3.2
+  git checkout -b gitAlias --track origin/stable-3.2
+  git checkout -b gitAlias --track origin/stable-3.2
+  git config alias.amm 'commit --amend'
+  git amm
+  git config alias.lline 'log --oneline -10'
+  git lline
+  git config alias.co checkout
+  git co master
+  git config alias.co 'commit -a -m "Quick commit"'
+  git status
+  git co
+  git st
+  git log -1
+  git config alias.count '!git log --all --oneline | wc -l'
+  git count
+  git config alias.ch '!chrome .'
+  git ch
+  git config alias gl1 'log -1 --name-status'
+  git gl1
+  git gui
+  git gl1 origin/stable-2.1
+  git config --list | grep alias
+  nano git-likeaboss
+  mv git-likeaboss likeboss
+  git likeaboss
+  git likeaboss
+  git likeaboss
+  mv likeaboss git_likeaboss
+  git git_likeaboss
+  git config commit.template ~/committemplate
+  git config --list | grep template
+  git commit --allow-empty
+  git clone https://github.com/dvaske/hello_world_cookbook.git
+  git status
+  git log --oneline
+  git reset --hard HEAD^
+  git log --oneline
+  git clone https://github.com/dvaske/hello_world_cookbook.git
+  git checkout master
+  git reset --hard origin master
+  git status
+  git log --oneline
+  git reset --mixed HEAD^
+  git log --oneline
+  git reset HEAD^
+  git checkout master
+  git reset --hard origin master
+  git status
+  git clone https://github.com/dvaske/hello_world_cookbook.git
+  git checkout master
+  git reset --hard origin master
+  git reset origin master
+  git log --onleline
+  git reset --soft HEAD^
+  git status
+  git clone https://github.com/dvaske/hello_world_cookbook.git
+  git log --oneline
+  git status
+  git stash
+  git status
+  git reset --hard HEAD^
+  git log --oneline
+  git stash pop
+  git clone https://githuib.com/dvaske/hello_world_cookbook.git
+  git clone https://github.com/dvaske/hello_world_cookbook.git
+  git log -1
+  git status
+  git commit --amend
+  git log -1
+  git cat-file -p 3061dc6
+  git cat-file -p HEAD
+  git st
+  git status
+  git add README.md
+  git status
+  git commit --amend --no-edit
+  git checkout master
+  git reset --hard origin master
+  git clone https://github.com/dvaske/hello_world_cookbook.git
+  git clone https://github.com/dvaske/hello_world_cookbook.git
+  git log --oneline
+  git revert 5ae3beb
+  git log --oneline
+  git revert 7b29bc3
+  git log --oneline
+  git show
+  git status
+  git clone https://github.com/dvaske/hello_world_cookbook.git
+  git branch -f feature/p-lang origin/feature/p-lang
+  git checkout develop
+  git reset --hard origin/develop
+  git log --oneline --graph -5
+  git ls-tree --abbrev HEAD
+  git revert -m 1 5ae3beb
+  git ls-tree --abbrev HEAD
+  git merge --no-edit feature/p-lang
+  git add hello_world.pl
+  git commit
+  git ls-tree --abbrev HEAD
+  git reset --hard HEAD^
+  git revert HEAD
+  git ls-tree --abbrev HEAD
+  git checkout master
+  git reset --hard origin master
+  git reflog -7
+  git reset origin master
+  git reflog -7
+  git show 2804731
+  git clone https://github.com/dvaske/hello_world_cookbook.git
+  git fsck --unreachable
+  git show b16cf63ab66605f9505c17c5affd88b34c9150ce
+  git show 147240ad0297f85c9ca3ed513906d4b75209e83d
+  git clone --bare
+  git clone --bare https:github.com/dvaske/hello_world_flow_model.git
+  git clone --bare https://github.com/dvaske/hello_world_flow_model.git
+  git clone hello_world_flow_model_remote hello_world_flow_model
+  git clone hello_world_flow_model_remote hello_world_flow_model
+  cd hello_world_flow_model.git
+  git clone hello_world_flow_model_remote hello_world_flow_model
+  git clone hello_world_flow_model_remote
+  cd hello_world_flow_model.git
+  git checkout develop
+  git count-objects
+  git fsck --unreachable
+  du -sh .git
+  du -sh .git
+  git remote rm origin
+  git fsck --unreachable
+  git gc
+  git count-objects
+  git fsck --unreachable
+  du -sh .git
+  git gc --prune=now
+  git count-objects
+  git fsck --unreachable
+  du -sh .git
+  git checkout develop
+  git reset --hard origin/develop
+  git config gc.auto
+  git config gc.auto 0
+  git config gc.auto
+  git gc --auto
+  git gc
+  git clone https://git.eclipse.org/r/jgit/jgit
+  cd jgit
+  git checkout master
+  current=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD)
+  for br in $(git branch -a | grep -v $current | grep remotes | grep -v HEAD);\ndo\ngit branch ${br##*/) $br;\ndone
+  for br in $(git branch -a | grep -v $current | grep remotes | grep -v HEAD);\ndo\ngit branch ${br##*/} $br;\ndone
+  keep="org.eclipse.jgit.http|LICENSE|.gitignore|README.md|.gitattributes"
+  git filter-branch --prune-empty  --index-filter "\"path/to/clean-tree\" \"$keep\"" --tag-name-filter cat -- --all
+  git filter-branch --prune-empty  --index-filter "\clean-tree \"$keep\"" --tag-name-filter cat -- --all
+  git filter-branch --prune-empty  --index-filter /Users/nasserabdelghani/Desktop/DevNet/DevOps/Git_Version_Control_Cookbook/jgit \"$keep\"" --tag-name-filter cat -- --all
+  git filter-branch --prune-empty  --index-filter "\"/Users/nasserabdelghani/Desktop/DevNet/DevOps/Git_Version_Control_Cookbook/jgit/clean-tree" \"$keep\"" --tag-name-filter cat -- --all\n\nend\nq
+  git filter-branch --prune-empty  --index-filter "\"/Users/nasserabdelghani/Desktop/DevNet/DevOps/Git_Version_Control_Cookbook/jgit/clean-tree \"$keep\"" --tag-name-filter cat -- --all
+  git filter-branch --prune-empty  --index-filter "\"/Users/nasserabdelghani/Desktop/DevNet/DevOps/Git_Version_Control_Cookbook/jgit/clean-tree \"$keep\" --tag-name-filter cat -- --all
+  git filter-branch --prune-empty  --index-filter "\"/Users/nasserabdelghani/Desktop/DevNet/DevOps/Git_Version_Control_Cookbook/jgit/clean-tree" "\"$keep\" --tag-name-filter cat -- --all\n
+  git filter-branch --prune-empty  --index-filter "\"/Users/nasserabdelghani/Desktop/DevNet/DevOps/Git_Version_Control_Cookbook/jgit/clean-tree "\"$keep\" --tag-name-filter cat --all
+  git filter-branch --prune-empty  --index-filter "\./clean-tree "\"$keep\" --tag-name-filter cat --all
+  git filter-branch --prune-empty  --index-filter ./clean-tree
+  git filter-branch --prune-empty  --index-filter .clean-tree
+  git filter-branch --prune-empty  --index-filter clean-tree
+  du -sh .git
+  git for-each-ref --format="%(refname)" refs/original/ |\xargs -n 1 git update-ref -d
+  git reflog expire --exire=now --all
+  git reflog expire --expire=now --all
+  git gc --prune=now
+  du -sh .git
+  git rm -rq --cached --ignore-unmatch $f
+  git rm -rq --cached --ignore-unmatch $f
+  git clone https://github.com/dvaske/remove-credentials.git
+  git filter-brach --prune-empty --tree-filter "test -f .credentials && sed -i '' 's/^\(.*=\).*$/\1/' .credentials || true" -- --all
+  git filter-branch --prune-empty --tree-filter "test -f .credentials && sed -i '' 's/^\(.*=\).*$/\1/' .credentials || true" -- --all
+  git clone https://git.eclipse.org/r/jgit/jgit
+  rm -rf hello_world_flow_model.git
+  git clone https://git.eclipse.org/r/jgit/jgit
+  rm -rf jgit
+  git clone https://git.eclipse.org/r/jgit/jgit
+  git clone --reference jgit --bare https://git.eclipse.org/r/jgit/jgit
+  git clone --mirror --reference jgit https://git.eclipse.org/r/jgit/jgit jgit.mirror
+  cd jgit
+  git branch
+  cd ../jgit.git 
+  git branch
+  git config remote.origin.fetch
+  git show-ref | cut -f2 -d " " | cut -f1,2 -d / | sort -u
+  git config remote.origin.url
+  git show-ref | cut -f2 -d " " | cut -f1,2 -d / | sort -u
+  git config remote.orgin.fetch
+  git show-ref | cut -f2 -d " " | cut -f1,2 -d / | sort -u
+  git clone --mirror git@github.com:jenkinsci/extreme-feedback-plugin.git
+  git clone --mirror git@github.com:jenkinsci/extreme-feedback-plugin.git
+  git clone https://github.com/dvaske/super.git
+  git submodule add git://github.com/dvaske/lib_a.git lib-a
+  git status
+  cat .gitmodules
+  git diff --cached lib_a
+  git diff --cached lib_a
+  git diff --cached lib-a
+  git checkout develop
+  git status
+  git submodule update
+  git status
+  git checkout develop
+  git status
+  git add lib-a
+  git commit -m 'Updated lib-a newest version'
+  git status
+  git --version
+  git config -f .gitmodules submodule.lib-a.branch stable
+  cat .gitmodules
+  git add .gitmodules
+  git commit -m 'Make lib-a track it stable branch'
+  git submodule update --remote
+  git status
+  git clone super super_clone
+  git clone super super_clone
+  git clone super super_clone
+  git submodule init
+  git submodule update --remote
+  git clone https://github.com/dvaske/super.git
+  git remote add lib-a git://github.com/dvaske/lib_a.git
+  git fetch li_a
+  git fetch lib_a
+  git fetch lib-a
+  git checkout -b lib_a_master lib_a/master
+  git checkout -b lib-a_master lib_a/master
+  git checkout -b lib-a_master lib-a/master
+  git checkout master
+  git merge -s ours --no-commit lib-a_master
+  git merge -s ours --no-commit lib-a-master
+  git merge -s ours --no-commit lib-a_master
+  git read-tree --prefix=lib-a/ -u lib-a_master
+  git commit -m 'Initial add of lib-a project'
+  git add super.txt
+  git commit -m "Update super.txt"
+  git add lib-a/b.txt
+  git commit -m [LIB-A] Enhance lib-a with b.txt"
+  git commit -m "[LIB-A] Enhance lib-a with b.txt"
+  gitk
+  git merge -m '[LIB-A] Update lib-a project to latest state' -s \ subtree lib-a/develop
+  git checkout lib-a_master
+  git merge lib-a/develop
+  git merge --squash -s subtree --no-commit master
+  git commit -m 'Enhance lib-a with b.txt'
+  gitk
+  git merge lib-a/stable
+  gitk
+  git checkout master
+  git merge -s subtree -m '[LIB-A] Update to latest state of lib-a' lib-a_master
+  gitk
+  git clone https://github.com/dvaske/offline-sharing.git
+  gitk -all
+  git checkout master
+  gitk --all
+  git format-patch -1 -o latest-commit
+  cat latest-commit/0001-Calculate-pi-with-more-digits.patch
+  git format-patch -3 -o latest-commits
+  git branch master origin/master
+  git checkout develop
+  git log --oneline master..develop
+  git format-patch -o not-on-master master
+  git checkout master
+  git checkout develop
+  git am latest-commit/0001-Calculate-pi-with-more-digits.patch
+  git checkout master
+  git am not-on-master/*
+  git log -1 --pretty=fuller
+  git checkout develop
+  git reset --hard origin/develop
+  git status
+  git format-patch -1 -o latest-commit
+  git config user.email
+  emailaddr=$(git config user.email)
+  git send-email --to $emailaddr --from $emailaddr latest-commit/0001-Calculate-pi-with-more-digits.patch
+  git checkout develop
+  git send-email --to aske.olsson@switch-gears.dk --from \ aske.alsson@switch-gears.dk --cover-letter --annotate origin.master
+  git send-email --to aske.olsson@switch-gears.dk --from \ aske.olsson@switch-gears.dk --cover-letter --annotate origin/master
+  git send-email --to nasser02@yahoo.com --from \ abdelnassermustafa@gmail.com --cover-letter --annotate origin/master
+  git clone https://github.com/dvaske/offline-sharing.git
+  git checkout master
+  git bundle create myrepo.bundle master
+  git bundle verify myrepo.bundle
+  git tag bundleForOtherRepo master
+  git bundle create myrepo.bundle bundleForOtherRepo..develop
+  git bundle verify myrepo.bundle
+  gitk master develop
+  git clone https://github.com/dvaske/offline-sharing.git
+  git checkout master
+  git bundle create myrepo.bundle master
+  git clone -b master offline-sharing/myrepo.bundle offline-other
+  git log --oneline --decorate --all
+  git bundle create myrepo.bundle bundleForOtherRepo..develop
+  git bundle create myrepo.bundle bundleForOtherRepo..develop
+  git bundle create myrepo.bundle bundleForOtherRepo..develop
+  git clone http://github.com/dvaske/offline-sharing.git
+  git checkout master
+  git bundle create myrepo.bundle master
+  git clone -b master offline-sharing/myrepo.bundle offline-other
+  git log --oneline --decorate --all
+  git bundle create myrepo.bundle bundleForOtherRepo..develop
+  git archive --prefix=offline/ -o offline.zip origin/master
+  git ls-tree -l origin/master
+  git archive --prefix=docs/ -o docs.zip origin/doc:Documentation
+  git ls-tree -l origin/doc:Documentation
+  git archive --format=tar.gz HEAD > offline.tar.gz
+  git archive -o offline.tar.gz HEAD
+  git clone https://github.com/dvaske/data-model.git
+  git rev-parse HEAD
+  git lo -1 --format=%H
+  git log -1 --format=%H
+  git flaw -1 --format=%H
+  git flow -1 --format=%H
+  git flow --format=%H
+  git flow 
+  git flow fature
+  git rev-parse --symbolic-full-name HEAD
+  git rev-parse --symbolic-full-name --abbrev-ref HEAD
+  git rev-parse origin/feature/2
+  git rev-parse --show-toplevel
+  git rev-parse --show-cdup
+  git rev-parse --show-prefix
+  git rev-parse --git-dir
+  git rev-parse --is-bare-repository
+  git clone https://github.com/dvaske/data-model.git
+  git clone --bare https://github.com/dvaske/data-model.git
+  git ls-tree --abbrev HEAD
+  git ls-tree --abbrev -l HEAD
+  git ls-tree --abbrev -r HEAD
+  git ls-tree --abbrev -r -l HEAD
+  git ls-tree --abbrev -r -l -t HEAD
+  git ls-tree -r HEAD a_sub_directory/readme
+  git cat-file -p 6dc3bfbc6db8253b7789af1dee44caf8ec6ffb6e
+  git diff-tree --abbrev HEAD origin/feature/2
+  git diff-tree --name-status HEAD origin/feature/2
+  git diff-tree --name-only HEAD origin/feature/2
+  git ls-files
+  git ls-files
+  git add test.txt
+  git ls-files
+  git ls-file -m
+  git ls-files -m
+  git reset HEAD test.txt
+  git ls-files --others
+  echo '*.txt' >> .gitignore
+  git ls-files -i --exclude-standard
+  git ls-files -o -i --exclude-standard
+  git reset --hard origin/master
+  git clean -xfd
+  git merge origin/feature/2
+  git status
+  git ls-files --unmerged
+  git ls-files --unmerged | cut -f 2 | sort -u
+  git init myplumbing
+  git status
+  git status
+  find .git/objects
+  fing .git/objects -type f
+  find .git/objects -type f
+  echo 'This is the content of my file' | git hash-object -w --stdin
+  git hash-object -w mytest.txt
+  git hash-object -w mytest.txt
+  find .git/objects -type f
+  git cat-file -p bacd9f51c26d602f474bbdc9f60644aa449e97
+  git cat-file -p 70bacd9f51c26d602f474bbdc9f60644aa449e97
+  git cat-file -t 926e8ffd3258ed6edd1e254438f02fd24e417acc
+  git cat-file -p 926e8ffd3258ed6edd1e254438f02fd24e417acc > mytest.txt
+  git update-index --add --cacheinfo 100644 ^[[200~\\n926e8ffd3258ed6edd1e254438f02fd24e417acc mytest.t
+  git update-index --add --cacheinfo 100644 \\n926e8ffd3258ed6edd1e254438f02fd24e417acc mytest.t
+  git write-tree
+  git update-index --cacheinfo 100644 \\n6b3da706d14c3820597ec7109f163bc144dcbb22 mytest.txt
+  git update-index --cacheinfo --add 100644 \\n6b3da706d14c3820597ec7109f163bc144dcbb22 mytest.txt
+  git update-index --add --cacheinfo  100644 \\n6b3da706d14c3820597ec7109f163bc144dcbb22 mytest.txt
+  git write-tree
+  git update-index --add --cacheinfo 100644 \\n70bacd9f51c26d602f474bbdc9f60644aa449e97 sub/other.txt
+  git write-tree
+  echo 'Initial commit - Good contents' | git commit-tree 4c4493f8\n40f4783c37e7cb9d07a4a71100acf4c474a376b0
+  echo 'Initial commit - Good contents' | git commit-tree 4c4493f8\n40f4783c37e7cb9d07a4a71100acf4c474a376b0
+  echo 'Second commit - Better contents' | git commit-tree -p \\n40f4783 2b969743
+  git clone https://github.com/dvaske/attributes_example.git
+  git checkout keyword
+  git config filter.date-keyword.clean 'perl -pe \\n"s/\\\$Date[^\\\$]*\\\$/\\\$Date\\\$/"'
+  git config filter.date-keyword.smudge 'perl -pe \\n"$/\\\$Date[^\\\$]*\\\$/\\\$Date: 'git log -1 --all --format=%ad \\n-- $1'\\\$/"'
+  git config filter.date-keyword.smudge 'perl -pe \\n"s/\\\$Date[^\\\$]*\\\$/\\\$Date: 'git log -1 --all --format=%ad \\n-- $1'\\\$/"'\n
+  echo "*.c filter=date-keyword" > .gitattributes\necho "*.java filter=date-keyword" >> .gitattributes\n
+  git checkout HelloWorld.java
+  git add HelloWorld.java
+  git diff -US --cached
+  git diff -U5 --cached
+  git add hello_world.c
+  git add .gitattributes
+  git commit -m "Add date-keyword filter for *.c and *.java filers"
+  git checkout master
+  git checkout keyword
+  git clone https://github.com/dvaske/attributes_example.git
+  git clone https://github.com/dvaske/attributes_example.git
+  git checkout exif
+  git config diff.exif-diff.textconv exiftool
+  git log --name-status -2
+  git diff HEAD^..HEAD
+  git clone https://github.com/dvaske/attributes_example.git
+  git checkout no_binaries
+  echo '*.jpg filter=binstore' > .gitattributes
+  git config filter.binstore.clean "./put-bin"
+  git config filter.binstore.smudge "./get-bin"
+  git ls-tree --abbrev exif | grep hello_world
+  git ls-tree --abbrev exif | grep hello_world
+  git cat-file -p 5aac2df > hello_world.jpg
+  git add hello_world.jpg
+  git add hello_world.jpg
+  git commit -m 'Added binary'
+  git log -1 -p
+  dest=$(git rev-parse --show-toplevel)/../binstore
+  la -la .git
+  l -la .git
+  ls -la .git
+  tmpfile=$(git rev-parse --show-toplevel)/tmp
+  tmpfile=$(git rev-parse --show-toplevel)/tmp\ncat > $tmpfile\n
+  echo '*.jpg filter=binstore' > .gitattributes
+  echo '*.jpg diff=exif-diff' >> .gitattributes
+  echo "*.c filter=date-keyword" >> .gitattribues
+  echo "*.java filter=date-keyword" >> .gitattributes
+  git checkout keyword
+  git check-attr -a hello_world.c HelloWorld.java
+  git checkout exif
+  git check-attr -a hello_world.jpg europe_needles.jpg
+  git check-attr diff hello_world.jpg
+  git check-attr filter hello_world.jpg
+  git check-attr -a README.md
+  git clone https://github.com/dvaske/cookbook-tips-tricks.git
+  git checkout master
+  git add foo
+  git status
+  git stash
+  git status
+  git add foo
+  git commit -m "Update foo"
+  git stash list
+  git status
+  gitk
+  git add foo
+  git stash --include-untracked
+  git status
+  gitk master stash
+  git stash pop --index
+  git stash --keep-index --include-untracked
+  git status
+  git status
+  git stash save 'Updates to foo'
+  git stash list
+  git stash save 'Mode another change to bar'
+  git stash list
+  git stash apply 'stash@{1}'
+  git stash apply --quiet 'stash@{0}'
+  git stash list
+  git stash drop 'stash#{1}'
+  git stash drop 'stash@{1}'
+  git stash list
+  git clone https://github.com/dvaske/cookbook-tips-tricks.git
+  git checkout bug_hunting
+  git bisect start
+  git bisect bad
+  git bisect good master
+  ../test.sh; test $? -eq 0 && git bisect good || git bisect bad
+  ../test.sh; test $? -eq 0 && git bisect good || git bisect bad
+  ../test.sh; test $? -eq 0 && git bisect good || git bisect bad
+  ../test.sh; test $? -eq 0 && git bisect good || git bisect bad
+  git bisect reset
+  git show 83c22a39955ec10ac1a2a5e7e69fe7ca354129af
+  gitk
+  git bisect start HEAD master
+  git bisect run ../test.sh
+  git bisect reset
+  git clone https://github.com/dvaske/cookbook-tips-tricks.git
+  git checkout bug_hunting
+  git blame --date short -L 30,47 map.txt
+  git add foo
+  git status
+  git config --global color.ui true
+  git status
+  git log --oneline --decorate --graph
+  what git-completion.bash
+  which git-completion.bash
+  locate git-completion.bash
+  cat /usr/local/Cellar/git/2.28.0/etc/bash_completion.d/git-completion.bash
+  if [ -f /etc/bash_completion.d/git-completion.bash ]; then\n    source /etc/bash_completion.d/git-completion.bash\nfi\n
+  git checkout
+  git branch 
+  if [ -f /etc/bash_completion.d/git-prompt.sh ]; then\n    source /etc/bash_completion.d/git-prompt.sh\nfi\n
+  PS1='\u@\h:\w$(__git_ps1 " (%s)") \$ ' \n
+  git checkout interactive
+  git reset 'HEAD^'
+  git add -p liberty.txt
+  git status
+  git diff
+  git commit -m 'Statue of liberty completed'
+  git add -i
+  git checkout interactive
+  git reset HEAD^
+  git gui
+  git status
+  git checkout ignore
+  git status
+  cat .gitignore
+  git add bin/frotz
+  git clean -Xnd
+  git status
+  git ls-files -o -i --exclude-standard
+  git clean -Xfd
+  git history | grep git

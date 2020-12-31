@@ -1,0 +1,63 @@
+TroubleShooting : Create our First Maven-based Jenkins Job
+If you got the below errors while putting the Github URL on Jenkins:
+
+Failed to connect to repository : Error performing command: C:\Git\bin ls-remote -h https://github.com/anshulc55/Jenkins_Upgradev3.git HEAD
+
+or
+
+Failed to connect to repository : Error performing command: C:\Users\mks7kor\AppData\Local\Programs\Git\cmd ls-remote -h https://github.com/anshulc55/Jenkins_Upgradev3.git HEAD
+
+Solution:
+
+Step 1: Find out where GIT is installed on your laptop (For Linux/Mac Users, you can run which git to find out the full path of GIT),
+
+Step 2: In the Path to Git executable field on the below Global Tool Configuration section put the full path to GIT.
+
+If you are using Windows, you might need to add exe extension to the end of git as well ( use git.exe instead of git )
+
+
+
+
+If Build is Failing:
+In case you run into the following error when build your first Jenkins job
+
+FATAL: Couldn't find any executable in /Users/xxxxx/Documents/apache-maven-3.3.9Build step 'Invoke top-level Maven targets' marked build as failureFinished: FAILURE
+it means jenkins user doesn't have permissions to access your maven directory. (Jenkins by default will run all builds under a special user name called jenkins )
+
+
+
+Solution:
+
+To fix it, we need to ensure that jenkins user has read and executable permission on /**/**apache-maven-** folder.
+
+
+
+For Mac/Linux User:
+
+If Maven is installed on /Users/anshul/Documents/apache-maven-3.3.9
+
+Step1 : under your regular user ID, run the following command:
+
+chmod 0755 /Users/anshul/Documents
+
+to ensure that jenkins user can access /Users/anshul/Documents
+
+Step 2: run the following command:
+
+chmod -R 0755 /Users/anshul/Documents/apache-maven-3.3.9
+
+to ensure jenkins can access to all the files under /Users/Hossein/Documents/apache-maven-3.3.9
+
+Step 3: verify jenkins user can run the maven mvn command:
+
+switch under jenkins user by running sudo -iu jenkins
+
+then run /Users/anshul/Documents/apache-maven-3.3.9/bin/mvn -v to verify you can execute mvn under jenkins user
+
+
+
+For Windows User:
+
+If you are using Windows, the troubleshooting steps should be very similar to Mac/Linux, you can change the permission by right-clicking the folder name.
+
+https://technet.microsoft.com/en-us/library/cc754344(v=ws.11).aspx
